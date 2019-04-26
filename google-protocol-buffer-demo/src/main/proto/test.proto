@@ -2,36 +2,45 @@
 syntax = "proto2";
 
 //包名
-option java_package = "com.sas.protobuf";
+option java_package = "com.sas.protoBuf";
 //源文件类名
-option java_outer_classname = "AddressAndPersonProto";
+option java_outer_classname = "AddressBookPB";
 
 // class Person
 message Person {
     //required 必须设置（不能为null）
-    required string name = 1;
+    required int32 id = 1;
     //int32 对应java中的int
-    required int32 id = 2;
+    required string name = 2;
     //optional 可以为空
     optional string email = 3;
+    optional int32 age = 4;
 
+    //enum 枚举类型
     enum PhoneType {
         MOBILE = 0;
         HOME = 1;
         WORK = 2;
     }
 
+    //内部类 PhoneNumber
     message PhoneNumber {
-        required string number = 1;
+        required int32 number = 1;
         optional PhoneType type = 2 [default = HOME];
     }
     //repeated 重复的 （集合）
-    repeated PhoneNumber phones = 4;
-}
+    repeated PhoneNumber phones = 5;
 
+    //测试可空对象
+    message Test {
+        optional string xxx1 = 1;
+        optional string xxx2 = 2;
+    }
+    optional Test test = 6;
+};
 message AddressBook {
-    repeated Person people = 1;
-    optional string name = 3;
-    optional string name1 = 2;
+    optional Person people = 1;
+    optional string homeAddress = 2;
+
 }
 
