@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.sas</groupId>
-    <artifactId>eureka-client-demo</artifactId>
+    <artifactId>spring-cloud-eureka-client-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>eureka-client-demo</name>
     <description>Demo project for Spring Boot</description>

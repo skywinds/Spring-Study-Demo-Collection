@@ -14,11 +14,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    /*@Value("${spring.dataSource.name}")
-    private String name;*/
-
-    @Value("${test}")
+    @Value("${spring.datasource.username}")
     private String name;
+
+    /*@Value("${test}")
+    private String name;*/
 
 //    @Resource
 //    private CellInfo cellInfo;

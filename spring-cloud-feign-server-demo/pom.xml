@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.sas</groupId>
-    <artifactId>feign-server-demo</artifactId>
+    <artifactId>spring-cloud-feign-server-demo</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>feign-server-demo</name>
     <description>Demo project for Spring Boot</description>

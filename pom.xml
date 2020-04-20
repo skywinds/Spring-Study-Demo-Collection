@@ -17,6 +17,5 @@
         <module>spring-cloud-feign-server-demo</module>
         <module>spring-cloud-config-server-demo</module>
         <module>spring-cloud-config-client-demo</module>
-		<module>spring-swagger2-demo</module>
     </modules>
 </project>

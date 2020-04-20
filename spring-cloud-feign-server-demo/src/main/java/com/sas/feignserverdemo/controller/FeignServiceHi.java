@@ -12,7 +12,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
  * To change this template use File | Settings | File Templates.
  */
 
-@FeignClient(value = "cellInfo-server",path = "/api/cellInfo")
+/** 定义feign接口
+ *  value 指向服务名
+ *  path  指向调用服务的具体路径
+ * */
+@FeignClient(value = "server-hi",path = "/api/cellInfo")
 public interface FeignServiceHi {
 
     @RequestMapping(value = "/hi", method = RequestMethod.GET)

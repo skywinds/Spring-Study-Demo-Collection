@@ -16,10 +16,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class ServiceHiController {
 
     @Autowired
-    private FeignServiceHi schedualServiceHi;
+    private FeignServiceHi feignServiceHi;
 
+    /** 调用feign声明的服务 */
     @RequestMapping(value = "/hi",method = RequestMethod.GET)
     public String sayHi(){
-        return   schedualServiceHi.sayHi();
+        return   feignServiceHi.sayHi();
     }
 }
