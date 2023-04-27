@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
-    @Value("${spring.datasource.username}")
+    @Value("${spring.datasource.username:xxx}")
     private String name;
 
     /*@Value("${test}")
